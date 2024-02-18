@@ -4,8 +4,14 @@
   "description": "setjmp/longjmp implementation from Emscripten",
   "main": "index.js",
   "scripts": {
-    "build": "./build.sh"
+    "build": "./build.sh",
+    "test": "node test/main.js"
   },
+  "files": [
+    "lib/libsetjmp.a",
+    "lib/libsetjmp-mt.a",
+    "include/setjmp.h"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/toyobayashi/wasm-sjlj.git"
